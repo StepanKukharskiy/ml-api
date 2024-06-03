@@ -3,8 +3,9 @@ from typing import Union
 from fastapi import FastAPI
 
 from transformers import pipeline, Conversation
-# generator = pipeline("text-generation", "TinyLlama/TinyLlama-1.1B-Chat-v1.0")
-generator = pipeline("text-generation", "stabilityai/stablelm-2-1_6b-chat")
+
+generator = pipeline("text-generation", "TinyLlama/TinyLlama-1.1B-Chat-v1.0")
+# generator = pipeline("text-generation", "stabilityai/stablelm-2-1_6b-chat")
 # generator = pipeline("text-generation", "deepseek-ai/deepseek-llm-7b-chat")
 
 prompt = "How do i create a sustainable city simulation game with p5.js?"
